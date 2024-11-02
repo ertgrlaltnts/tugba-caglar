@@ -1,0 +1,124 @@
+* {
+  scrollbar-color: #bf8c41;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #bf8c41;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #e7e7e7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white !important;
+}
+
+.slick-dots li {
+  margin: 0;
+}
+
+.slick-dots li button:before {
+  color: #c2c2c2 !important;
+  font-size: 10px;
+}
+
+.slick-dots li button:before {
+  font-size: 0 !important;
+}
+
+.ant-modal-content {
+  padding: 0 !important;
+}
+
+.my-slider .slick-slide {
+  align-items: center !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.ant-dropdown-menu {
+  border-radius: 0 !important;
+  margin-left: 1px !important;
+}
+
+.ant-drawer-header {
+  display: none !important;
+}
+
+.ant-drawer-body {
+  padding: 0 !important;
+}
+
+.ant-drawer-content {
+  background-color: transparent !important;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  font-size: 25px;
+  color: #bf8c41;
+  transition: all 0.4s ease-in-out;
+}
+
+.slick-slider {
+  cursor: grab !important;
+}
+
+.ant-dropdown-menu-item:hover {
+  background-color: transparent !important;
+}
+
+.ant-btn-primary {
+  color: #fff;
+  background-color: #bf8c41;
+  box-shadow: 0 2px 0 rgba(5, 145, 255, 0.1);
+}
+
+.ant-btn-primary:hover {
+  background-color: #bf8c41 !important;
+}
+
+.ant-btn-default:hover {
+  border-color: #d9d9d9 !important;
+  color: #000 !important;
+}
+
+.ant-float-btn {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ant-float-btn-body {
+  background-color: #bf8c41 !important;
+}
+
+.ant-float-btn-icon {
+  width: 30px !important;
+  height: 20px !important;
+}
+
+.ant-image-mask {
+  border-radius: 10px;
+}
+
+.ant-image {
+  width: 95% !important;
+}
+
+.ant-modal-content {
+  background-color: transparent !important;
+}
