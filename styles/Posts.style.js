@@ -28,7 +28,7 @@ export const Hmp = {
 
   TextTitle: styled.h1`
     font-size: 40px;
-    font-family: "Quicksand";
+     
     font-weight: 800;
     color: #fff;
     margin-top: 60px;
@@ -70,7 +70,6 @@ export const Hmp = {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family:Quicksand;
     font-size:16px;
   `,
 
@@ -106,7 +105,7 @@ export const Hmp = {
   `,
 
   Title: styled.div`
-    font-family: Quicksand;
+     
     font-weight: 600;
     font-size: 30px;
     margin: 30px 0 15px 0;
@@ -117,7 +116,7 @@ export const Hmp = {
   `,
 
   Title2: styled.div`
-    font-family: Quicksand;
+     
     font-weight: 600;
     text-align:center;
     font-size: 20px;
@@ -125,7 +124,6 @@ export const Hmp = {
   `,
 
   Keys: styled.div`
-  font-family:Quicksand;
   display:inline-block;
   border:1px solid #bf8c41;
   border-radius:5px;
@@ -143,7 +141,7 @@ export const Hmp = {
     margin: 5px;
   `,
   ElementText: styled.div`
-    font-family: Quicksand;
+     
     font-weight: 400;
     font-size: 14px;
     margin-left: 10px;
@@ -157,7 +155,7 @@ export const Hmp = {
     cursor: pointer;
     background-color: #bf8c41;
     color: #fff;
-    font-family: Quicksand;
+     
     font-weight: 600;
     font-size: 18px;
     padding: 8px 15px;

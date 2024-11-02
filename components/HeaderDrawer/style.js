@@ -34,7 +34,7 @@ export const Hdw = {
   `,
   Element: styled.div`
     color: #a8a8a8;
-    font-family: Quicksand;
+     
     font-weight: 600;
     font-size: 20px;
     padding: 10px;
@@ -52,7 +52,7 @@ export const Hdw = {
 
   Copyright: styled.div`
     color: #a8a8a8;
-    font-family: "Quicksand";
+     
     max-width: 80%;
     text-align: center;
     font-size: 16px;
@@ -71,7 +71,7 @@ export const Hdw = {
   `,
   RowItem: styled.div`
     color: #a8a8a8;
-    font-family: "Quicksand";
+     
     padding: 0 5px;
     cursor: pointer;
     transition: all 0.4s ease-in-out;

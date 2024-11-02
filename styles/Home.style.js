@@ -16,23 +16,29 @@ export const Hmp = {
   Source: styled.source``,
   Container: styled.div``,
   TopBlock: styled.div`
-    height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ),
+    background-image: 
       url("${(props) => props.image}");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
     position: relative;
   `,
 
+  TopBlockImage: styled(Image)`
+  width: 100%;
+  height:100vh;
+  object-fit:cover;
+`,
+
+
   TextTitle: styled.div`
     font-size: 35px;
-    font-family: "Quicksand";
+     
     font-weight: 600;
     color: #fff;
     margin-top: 200px;
@@ -57,7 +63,7 @@ export const Hmp = {
   `,
   Text: styled.div`
     font-size: 18px;
-    font-family: "Quicksand";
+     
     font-weight: 400;
 
     color: #fff;
@@ -81,7 +87,7 @@ export const Hmp = {
     }
   `,
   More: styled.div`
-    font-family: "Quicksand";
+     
     font-weight: 600;
     background-color: #bf8c41;
     font-size: 20px;
@@ -128,7 +134,7 @@ export const Hmp = {
 
   ServicesText: styled.div`
     color: "#000";
-    font-family: "Quicksand";
+     
     font-size: 30px;
     margin: 40px 0;
   `,
@@ -148,18 +154,18 @@ export const Hmp = {
     justify-content: center;
   `,
   BannerTitle: styled.div`
-    font-family: "Quicksand";
+     
     color: #fff;
     font-size: 30px;
   `,
   BannerText: styled.div`
-    font-family: "Quicksand";
+     
     color: #fff;
     font-size: 20px;
     margin-top: 10px;
   `,
   BannerButton: styled.div`
-    font-family: "Quicksand";
+     
     background-color: #bf8c41;
     font-size: 20px;
     padding: 5px 15px;
@@ -215,7 +221,7 @@ export const Hmp = {
   `,
 
   ContactTitle: styled.div`
-    font-family: "Quicksand";
+     
     font-weight: 600;
     font-size: 30px;
     text-align: center;
@@ -234,7 +240,7 @@ export const Hmp = {
     }
   `,
   ContactText: styled.div`
-    font-family: "Quicksand";
+     
     font-size: 15px;
     text-align: center;
     color: #fff;
@@ -296,7 +302,7 @@ export const Hmp = {
   `,
 
   ContactBlockText: styled.div`
-    font-family: "Quicksand";
+     
     color: #fff;
     font-size: 14px;
     margin-top: 5px;
@@ -323,12 +329,12 @@ export const Hmp = {
     height: 50px;
     object-fit: cover;
   `,
-  ActivityTitle: styled.div`
+  ActivityTitle: styled.h1`
     font-size: 30px;
     text-align: center;
-    font-family: "Quicksand";
+     
     font-weight: 500;
-    color: #656c76;
+    color: #000;
     margin: 10px 40px;
 
     @media ${device.mobileL} {
@@ -336,7 +342,7 @@ export const Hmp = {
     }
   `,
   ActivityText: styled.div`
-    font-family: "Quicksand";
+     
     font-weight: 400;
     font-size: 16px;
     color: #000;
@@ -408,7 +414,7 @@ export const Hmp = {
     width: 40%;
   `,
   HealthTitle: styled.div`
-    font-family: "Quicksand";
+     
     font-weight: 600;
     font-size: 30px;
     color: #fff;
@@ -427,7 +433,7 @@ export const Hmp = {
     }
   `,
   HealthText: styled.div`
-    font-family: "Quicksand";
+     
     font-size: 14px;
     color: #fff;
     margin-top: 15px;
@@ -565,7 +571,7 @@ export const Hmp = {
   `,
 
   CommentTitle: styled.div`
-    font-family: "Quicksand";
+     
     font-weight: 600;
     font-size: 40px;
     color: #fff;
@@ -584,7 +590,7 @@ export const Hmp = {
     }
   `,
   CommentSubTitle: styled.div`
-    font-family: "Quicksand";
+     
     font-weight: 500;
 
     font-size: 14px;
@@ -635,7 +641,7 @@ export const Hmp = {
     border-radius: 10px;
   `,
   GroupItemTitle: styled.div`
-    font-family: Quicksand;
+     
     font-weight: 600;
     font-size: 16px;
     width: 100%;
@@ -649,7 +655,7 @@ export const Hmp = {
   GroupItemText: styled.div`
     margin: 5px 0 0 5px;
 
-    font-family: Quicksand;
+     
     width: 100%;
 
     font-weight: 400;
@@ -659,7 +665,7 @@ export const Hmp = {
 
   Button: styled.div`
     cursor: pointer;
-    font-family: "Quicksand";
+     
     font-weight: 500;
     font-size: 14px;
     color: #fff;
@@ -697,7 +703,7 @@ export const Hmp = {
   `,
 
   BlogTitle: styled.div`
-    font-family: Quicksand;
+     
     width: 100%;
     font-weight: 600;
     font-size: 35px;
@@ -719,23 +725,20 @@ export const Hmp = {
   `,
 
   TextBlock: styled.div`
-    position: absolute;
-    z-index: 1;
-    top: 65%;
-    width: 100%;
+  position:absolute;
   `,
-  TopTitle: styled.h1`
-    font-family: Quicksand;
-    font-size: 35px;
+
+  TopTitle: styled.h3`
+    font-size: 20px;
     color: #fff;
     font-weight: 600;
     text-align: center;
     @media ${device.mobileL} {
-      font-size: 25px;
+      font-size: 14px;
     }
   `,
   TopText: styled.h1`
-    font-family: Quicksand;
+     
     font-size: 50px;
     color: #bf8c41;
     font-weight: 800;
@@ -746,7 +749,7 @@ export const Hmp = {
   `,  
 
   ButtonMakale: styled.div`
-    font-family: "Quicksand";
+     
     font-weight: 500;
     font-size: 16px;
     color: #fff;
@@ -765,7 +768,7 @@ export const Hmp = {
 };
 
 export const ButtonText = styled.div`
-  font-family: "Quicksand";
+   
   font-weight: 500;
   font-size: 14px;
   color: #000;

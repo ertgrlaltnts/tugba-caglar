@@ -42,7 +42,7 @@ export const Shr = {
 
   Number: styled.div`
     color: #fff;
-    font-family: Quicksand;
+     
     font-weight: 600;
     text-decoration: underline;
     font-size: 14px;
@@ -90,7 +90,7 @@ export const Shr = {
 };
 
 export const Element = styled.div`
-  font-family: Quicksand;
+   
   font-size: 15px;
   position: relative;
   color: #fff;
@@ -106,7 +106,6 @@ export const Element = styled.div`
 `;
 
 export const ElementDropdown = styled(Dropdown)`
-  font-family: "" Quicksand "";
   font-size: 15px;
   position: relative;
   color: #fff;
@@ -171,7 +170,6 @@ export const ElementDropdown = styled(Dropdown)`
 `;
 
 export const ElementList = styled(Link)`
-  font-family: "" Quicksand "";
   font-size: 15px;
   position: relative;
   color: #fff;

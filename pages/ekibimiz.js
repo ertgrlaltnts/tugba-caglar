@@ -14,6 +14,13 @@ import axios from "axios";
 import { Envelope, Phone } from "phosphor-react";
 import { Prl } from "../styles/Products.style";
 
+import { Quicksand } from "@next/font/google";
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"], // İhtiyacınıza göre ağırlıkları ekleyin
+});
+
 export default function Vision({ drawer, setDrawer, settings, general }) {
   const [small, setSmall] = useState(false);
   useEffect(() => {
@@ -71,7 +78,7 @@ export default function Vision({ drawer, setDrawer, settings, general }) {
         <link rel="canonical" href="https://www.tugbacaglar.com/ekibimiz" />
         <link rel="icon" href="/logo.png" />
       </Head>
-      <main>
+      <main className={quicksand.className}>
         <PageTransition>
           <HeaderDrawer
             modalVisible={drawer}
@@ -95,10 +102,11 @@ export default function Vision({ drawer, setDrawer, settings, general }) {
             {settings.slider.map((item, index) => (
               <Vsn.TopBlock key={index}>
                 <WrapBlock>
-                  <Vsn.AlignCenter>
+                  <Vsn.AlignCenter className={quicksand.className}>
                     <Vsn.ImageBlock>
                       <Vsn.Image
                         src={`${process.env.NEXT_PUBLIC_IP}${item.image.data.attributes.url}`}
+                        alt={`tugba-caglar-ekibimiz-${index}`}
                       />
                     </Vsn.ImageBlock>
                     <Vsn.TextBlock>

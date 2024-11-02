@@ -13,6 +13,12 @@ import { notification } from "antd";
 import React, { useState, useEffect } from "react";
 import { sendContactForm } from "../lib/api";
 import axios from "axios";
+import { Quicksand } from "@next/font/google";
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"], // İhtiyacınıza göre ağırlıkları ekleyin
+});
 
 export default function Contact({ drawer, setDrawer, contact, settings }) {
   const [name, setName] = useState("");
@@ -122,7 +128,7 @@ export default function Contact({ drawer, setDrawer, contact, settings }) {
         <link rel="canonical" href="https://www.tugbacaglar.com/iletisim" />
         <link rel="icon" href="/logo.png" />
       </Head>
-      <main>
+      <main className={quicksand.className}>
         <PageTransition>
           <HeaderDrawer
             modalVisible={drawer}

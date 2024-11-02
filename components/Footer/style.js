@@ -35,7 +35,7 @@ export const Ftr = {
     }
   `,
   Title: styled.div`
-    font-family: "Quicksand";
+     
     color: #fff;
     font-size: 18px;
 
@@ -61,7 +61,7 @@ export const Ftr = {
     margin: 2px 0;
   `,
   ContactText: styled.div`
-    font-family: "Quicksand";
+     
     font-weight: 500;
     color: #a8a8a8;
     font-size: 12px;
@@ -77,7 +77,7 @@ export const Ftr = {
   `,
 
   LinkText: styled(Link)`
-    font-family: "Quicksand";
+     
     font-weight: 500;
     color: #a8a8a8;
     font-size: 12px;
@@ -123,7 +123,7 @@ export const Ftr = {
   `,
   Copyright: styled.div`
     color: #a8a8a8;
-    font-family: "Quicksand";
+     
     font-size: 12px;
     margin-top: 20px;
     max-width: 60%;

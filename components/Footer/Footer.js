@@ -20,6 +20,7 @@ const Footer = ({ settings }) => {
           <Ftr.LogoContainer>
             <Ftr.Logo
               src={`${process.env.NEXT_PUBLIC_IP}${settings.logo.data.attributes.url}`}
+              alt="Çağlar Logo"
             />
           </Ftr.LogoContainer>
         </Col>
@@ -65,22 +66,25 @@ const Footer = ({ settings }) => {
             <Ftr.Title>Bizi Takip Edin</Ftr.Title>
 
             <Ftr.IconRow>
-              <Ftr.Icon href={settings.instagram}>
+              <Ftr.Icon key={1} href={settings.instagram}>
                 <InstagramLogo
                   size={size.width > 476 ? 24 : 18}
                   color="#bf8c41"
+                  name="instagram"
                 />
               </Ftr.Icon>
-              <Ftr.Icon href={settings.facebook}>
+              <Ftr.Icon key={2} href={settings.facebook}>
                 <FacebookLogo
                   size={size.width > 476 ? 24 : 18}
                   color="#bf8c41"
+                  name="facebook"
                 />
               </Ftr.Icon>
-              <Ftr.Icon href={settings.twitter}>
+              <Ftr.Icon key={3} href={settings.twitter}>
                 <TwitterLogo
                   size={size.width > 476 ? 24 : 18}
                   color="#bf8c41"
+                  name="twitter"
                 />
               </Ftr.Icon>
             </Ftr.IconRow>

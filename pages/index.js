@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Head from "next/head";
-import Navbar from "@/components/Header/Header";
-import MobileHeader from "../components/MobileHeader/MobileHeader";
 import MobileHeaderScroll from "../components/MobileHeaderScroll/MobileHeaderScroll";
 import ScrollNavbar from "../components/ScrollHeader/ScrollHeader";
 import Footer from "../components/Footer/Footer";
@@ -19,18 +17,14 @@ import Collapse from "@/components/Collapse";
 import axios from "axios";
 import Link from "next/link";
 import { add3Dots } from "@/helper/add3dots";
+import { Quicksand } from "@next/font/google";
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"], // İhtiyacınıza göre ağırlıkları ekleyin
+});
 
 export default function Home({ drawer, setDrawer, settings, blogs, general }) {
   const size = useWindowSize();
-
-  const [small, setSmall] = useState(false);
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", () =>
-        setSmall(window.pageYOffset > 200)
-      );
-    }
-  }, []);
 
   return (
     <>
@@ -85,7 +79,7 @@ export default function Home({ drawer, setDrawer, settings, blogs, general }) {
         <link rel="canonical" href="https://www.tugbacaglar.com" />
         <link rel="icon" href="/logo.png" />
       </Head>
-      <main>
+      <main className={quicksand.className}>
         <PageTransition>
           <HeaderDrawer
             modalVisible={drawer}
@@ -93,27 +87,24 @@ export default function Home({ drawer, setDrawer, settings, blogs, general }) {
             settings={general}
           />
           <Hmp.Container>
-            {small ? (
-              <ScrollNavbar settings={general} />
-            ) : (
-              <Navbar settings={general} />
-            )}
-            {small ? (
-              <MobileHeaderScroll
-                setModalVisible={setDrawer}
-                settings={general}
-              />
-            ) : (
-              <MobileHeader setModalVisible={setDrawer} settings={general} />
-            )}
+            <ScrollNavbar settings={general} />
+
+            <MobileHeaderScroll
+              setModalVisible={setDrawer}
+              settings={general}
+            />
+
             <Hmp.TopBlock
               image={`${process.env.NEXT_PUBLIC_IP}${settings.main_image.data.attributes.url}`}
-              alt="tugba-caglar"
             >
-              <Hmp.TextBlock>
-                <Hmp.TopTitle>TRABZON HUKUK BÜROSU</Hmp.TopTitle>
-                <Hmp.TopText>AVUKAT TUĞBA ÇAĞLAR</Hmp.TopText>
-              </Hmp.TextBlock>
+              <WrapBlock>
+                <Hmp.TopTitle style={{ marginTop: 250 }}>
+                  ÇAĞLAR HUKUK VE DANIŞMANLIK BÜROSU
+                </Hmp.TopTitle>
+                <Hmp.TopText style={{ marginTop: 10 }}>
+                  AVUKAT TUĞBA ÇAĞLAR
+                </Hmp.TopText>
+              </WrapBlock>
             </Hmp.TopBlock>
 
             <Hmp.MidBlock>
@@ -201,7 +192,7 @@ export default function Home({ drawer, setDrawer, settings, blogs, general }) {
                 <Row gutter={[8, 8]}>
                   {blogs.slice(0, 3).map((item, index) => (
                     <Col key={index} xs={24} sm={24} md={12} lg={12} xl={8}>
-                      <Hiz.YaziBlock>
+                      <Hiz.YaziBlock className={quicksand.className}>
                         <Hiz.YaziImage
                           src={`${process.env.NEXT_PUBLIC_IP}${item.attributes.image.data.attributes.url}`}
                           alt={`tugba-caglar-makale-${index}`}
@@ -338,7 +329,7 @@ export default function Home({ drawer, setDrawer, settings, blogs, general }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const response = await axios.get(
     `${process.env.NEXT_PUBLIC_IP}/api/home?populate=deep`
   );
@@ -357,6 +348,5 @@ export async function getStaticProps() {
       general: response3.data.data.attributes,
       blogs: response5.data.data,
     },
-    revalidate: 10,
   };
 }

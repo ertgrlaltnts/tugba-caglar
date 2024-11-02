@@ -23,7 +23,7 @@ export const Abt = {
 
   TextTitle: styled.div`
     font-size: 35px;
-    font-family: "Quicksand";
+     
     font-weight: 800;
     text-align: left;
     color: #bf8c41;
@@ -43,7 +43,7 @@ export const Abt = {
   `,
   Text: styled.div`
     font-size: 14px;
-    font-family: "Quicksand";
+     
     font-weight: 500;
     color: #fff;
     text-align: left;
@@ -117,7 +117,7 @@ export const Abt = {
     margin: 40px 150px;
   `,
   BlockTitle: styled.div`
-    font-family: "Quicksand";
+     
     font-size: 35px;
     color: #000;
     text-align: center;
@@ -138,7 +138,7 @@ export const Abt = {
   `,
   BlockText: styled.div`
     width: 50%;
-    font-family: "Quicksand";
+     
     font-size: 20px;
   `,
 

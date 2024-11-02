@@ -24,7 +24,7 @@ export const Cmb = {
     }
   `,
   Name: styled.div`
-    font-family: "Quicksand";
+     
     font-weight: 600;
     font-size: 22px;
     color: #000;
@@ -39,7 +39,7 @@ export const Cmb = {
     }
   `,
   Firm: styled.div`
-    font-family: "Quicksand";
+     
     font-weight: 500;
     font-size: 14px;
     text-align: center;
@@ -64,7 +64,7 @@ export const Cmb = {
     }
   `,
   Comment: styled.div`
-    font-family: "Quicksand";
+     
     font-size: 14px;
     text-align: center;
     color: #000;

@@ -1,11 +1,8 @@
 import Head from "next/head";
-import Navbar from "@/components/Header/Header";
-import MobileHeader from "../components/MobileHeader/MobileHeader";
 import MobileHeaderScroll from "../components/MobileHeaderScroll/MobileHeaderScroll";
 import ScrollNavbar from "../components/ScrollHeader/ScrollHeader";
 import HeaderDrawer from "@/components/HeaderDrawer/HeaderDrawer";
 import Footer from "../components/Footer/Footer";
-import { Carousel } from "antd";
 import { Abt } from "../styles/About.style";
 import WrapBlock from "@/components/WrapBlock/WrapBlock";
 import PageTransition from "@/components/PageTransition/PageTransition";
@@ -13,6 +10,13 @@ import React, { useState, useEffect } from "react";
 import { Prl } from "../styles/Products.style";
 import axios from "axios";
 import Markdown from "markdown-to-jsx";
+
+import { Quicksand } from "@next/font/google";
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"], // İhtiyacınıza göre ağırlıkları ekleyin
+});
 
 export default function About({ drawer, setDrawer, settings, general }) {
   const [small, setSmall] = useState(false);
@@ -70,7 +74,7 @@ export default function About({ drawer, setDrawer, settings, general }) {
         <link rel="canonical" href="https://www.tugbacaglar.com/hakkimizda" />
         <link rel="icon" href="/logo.png" />
       </Head>
-      <main>
+      <main className={quicksand.className}>
         <PageTransition>
           <HeaderDrawer
             modalVisible={drawer}
@@ -98,6 +102,7 @@ export default function About({ drawer, setDrawer, settings, general }) {
                   <Abt.ImageBlock>
                     <Abt.Image
                       src={`${process.env.NEXT_PUBLIC_IP}${item.image.data.attributes.url}`}
+                      alt={`caglar-hukuk-hakkimizda-${index}`}
                     />
                   </Abt.ImageBlock>
                   <Abt.TextBlock>

@@ -12,6 +12,12 @@ import React, { useState, useEffect } from "react";
 import { Hiz } from "../../styles/Hizmetlerimiz.style";
 import axios from "axios";
 import Link from "next/link";
+import { Quicksand } from "@next/font/google";
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"], // İhtiyacınıza göre ağırlıkları ekleyin
+});
 
 export default function About({ drawer, setDrawer, blogs, general, settings }) {
   const [small, setSmall] = useState(false);
@@ -22,6 +28,7 @@ export default function About({ drawer, setDrawer, blogs, general, settings }) {
       );
     }
   }, []);
+
   return (
     <>
       <Head>
@@ -75,7 +82,7 @@ export default function About({ drawer, setDrawer, blogs, general, settings }) {
         />
         <link rel="icon" href="/logo.png" />
       </Head>
-      <main>
+      <main className={quicksand.className}>
         <PageTransition>
           <HeaderDrawer
             modalVisible={drawer}
@@ -98,7 +105,7 @@ export default function About({ drawer, setDrawer, blogs, general, settings }) {
             <Row gutter={[8, 8]}>
               {blogs.map((item, index) => (
                 <Col key={index} xs={24} sm={24} md={12} lg={12} xl={8}>
-                  <Hiz.YaziBlock>
+                  <Hiz.YaziBlock className={quicksand.className}>
                     <Hiz.YaziImage
                       src={`${process.env.NEXT_PUBLIC_IP}${item.attributes.image.data.attributes.url}`}
                       alt={`tugba-caglar-hizmetlerimiz-${item.attributes.slug}`}

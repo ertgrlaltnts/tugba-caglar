@@ -24,7 +24,7 @@ export const Prl = {
 
   TextTitle: styled.h1`
     font-size: 40px;
-    font-family: "Quicksand";
+     
     font-weight: 800;
     color: #fff;
     margin-top: 60px;
@@ -34,7 +34,7 @@ export const Prl = {
   `,
   Text: styled.div`
     font-size: 16px;
-    font-family: "Quicksand";
+     
     font-weight: 500;
     color: #fff;
 
@@ -50,7 +50,7 @@ export const Prl = {
     }
   `,
   More: styled.div`
-    font-family: "Quicksand";
+     
     background-color: #bf8c41;
     font-size: 25px;
     padding: 5px 15px;
@@ -85,7 +85,7 @@ export const Prl = {
 
   ServicesText: styled.div`
     color: "#000";
-    font-family: "Quicksand";
+     
     font-size: 30px;
     margin: 40px 0;
   `,

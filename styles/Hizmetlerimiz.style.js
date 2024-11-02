@@ -36,7 +36,7 @@ export const Hiz = {
 
   TextTitle: styled.h1`
   font-size: 40px;
-  font-family: "Quicksand";
+   
   font-weight: 800;
   color: #fff;
   margin-top: 60px;
@@ -48,7 +48,7 @@ export const Hiz = {
   
   Text: styled.div`
     font-size: 14px;
-    font-family: "Quicksand";
+     
     font-weight: 500;
     color: #fff;
     text-align: left;
@@ -107,17 +107,17 @@ export const Hiz = {
 
   YaziTitle: styled.h3`
     text-align: center;
-    font-family: Quicksand;
+     
     color: #000;
     font-size: 22px;
   `,
   YaziContent: styled.p`
-    font-family: Quicksand;
+     
     margin-bottom: 30px;
   `,
   Button: styled(Link)`
     cursor: pointer;
-    font-family: "Quicksand";
+     
     font-weight: 500;
     font-size: 16px;
     color: #fff;

@@ -59,7 +59,7 @@ export const Adl = {
     border-radius: 5px;
   `,
   Title: styled.div`
-    font-family: Quicksand;
+     
     font-weight: 600;
     font-size: 25px;
     margin: 30px 0 10px 0;
@@ -68,7 +68,7 @@ export const Adl = {
     outline: none;
     border: none;
     width: 100%;
-    font-family: Quicksand;
+     
     font-weight: 500;
     margin-top: 20px;
 
@@ -77,7 +77,7 @@ export const Adl = {
   Button: styled.div`
     width: 100%;
     text-align: center;
-    font-family: Quicksand;
+     
     font-weight: 600;
     color: #fff;
     padding: 7px 0;

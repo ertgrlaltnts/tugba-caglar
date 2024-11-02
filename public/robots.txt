@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://tugbacaglar.com
+
+# Sitemaps
+Sitemap: https://tugbacaglar.com/sitemap.xml

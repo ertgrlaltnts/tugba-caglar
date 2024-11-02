@@ -23,13 +23,13 @@ export const Svm = {
     margin: 30px 0 10px 0;
   `,
   Title: styled.div`
-    font-family: "Quicksand";
+     
     font-size: 30px;
     color: #000;
     text-align: center;
   `,
   Text: styled.div`
-    font-family: "Quicksand";
+     
     font-size: 14px;
     color: #000;
     padding: 10px;

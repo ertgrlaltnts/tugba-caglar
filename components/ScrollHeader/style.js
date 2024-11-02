@@ -45,7 +45,7 @@ export const Hdr = {
   `,
   Number: styled.div`
     color: #fff;
-    font-family: Quicksand;
+     
     font-weight: 600;
     text-decoration: underline;
     font-size: 14px;
@@ -71,7 +71,7 @@ export const Hdr = {
 
   MenuItem: styled(Link)`
     color: #000;
-    font-family: Quicksand;
+     
     font-weight: 600;
     font-size: 15px;
   `,
@@ -100,7 +100,7 @@ export const Hdr = {
 };
 
 export const Element2 = styled.div`
-  font-family: Quicksand;
+   
   font-weight: 600;
   font-size: 15px;
   position: relative;
@@ -166,7 +166,7 @@ export const Element2 = styled.div`
 `;
 
 export const Element = styled(Link)`
-  font-family: Quicksand;
+   
   font-weight: 600;
   font-size: 15px;
   position: relative;
@@ -232,7 +232,7 @@ export const Element = styled(Link)`
 `;
 
 export const ElementDropdown = styled(Dropdown)`
-  font-family: Quicksand;
+   
   font-weight: 600;
   font-size: 15px;
   position: relative;
@@ -299,7 +299,7 @@ export const ElementDropdown = styled(Dropdown)`
 `;
 
 export const ElementList = styled(Link)`
-  font-family: Quicksand;
+   
   font-weight: 600;
 
   font-size: 15px;

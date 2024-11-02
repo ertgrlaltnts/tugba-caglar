@@ -40,7 +40,7 @@ export const Prm = {
   `,
   Title: styled.div`
     color: #000;
-    font-family: "Quicksand";
+     
     font-size: 30px;
 
     @media ${device.tablet} {
@@ -51,7 +51,7 @@ export const Prm = {
   `,
   Subtitle: styled.div`
     color: #a8a8a8;
-    font-family: "Quicksand";
+     
     font-size: 18px;
     margin-top: -15px;
     @media ${device.tablet} {
@@ -63,7 +63,7 @@ export const Prm = {
 
   CategoriesTitle: styled.div`
     color: #000;
-    font-family: "Quicksand";
+     
     font-size: 18px;
     margin: 10px 0;
     @media ${device.tablet} {
@@ -84,7 +84,7 @@ export const Prm = {
   CategoriesElement: styled.div`
     background-color: #a8a8a8;
     color: #fff;
-    font-family: "Quicksand";
+     
     font-size: 14px;
     padding: 2px 8px;
     border-radius: 5px;
@@ -94,7 +94,7 @@ export const Prm = {
   Price: styled.div`
     background-color: #bf8c41;
     color: #fff;
-    font-family: "Quicksand";
+     
     font-size: 25px;
     padding: 2px 25px;
     border-radius: 5px;
@@ -104,7 +104,7 @@ export const Prm = {
 
   Text: styled.div`
     font-size: 14px;
-    font-family: "Quicksand";
+     
     @media ${device.tablet} {
       font-size: 12px;
 

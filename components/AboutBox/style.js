@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const Abb = {
   Title: styled.div`
-    font-family: "Quicksand";
+     
     font-weight: 600;
     font-size: 20px;
     color: #000;
@@ -14,7 +14,7 @@ export const Abb = {
   `,
 
   Text: styled.div`
-    font-family: "Quicksand";
+     
     font-size: 14px;
   `,
 
@@ -60,7 +60,7 @@ export const Container = styled.div`
 `;
 
 export const ButtonText = styled.div`
-  font-family: "Quicksand";
+   
   font-weight: 500;
   font-size: 14px;
   color: #a9a9a9;

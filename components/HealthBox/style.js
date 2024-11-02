@@ -33,7 +33,7 @@ export const Htb = {
   `,
   Title: styled(motion.div)`
     color: #bf8c41;
-    font-family: "Quicksand";
+     
     font-weight: 500;
     font-size: 35px;
     margin-bottom: 0;
@@ -51,7 +51,7 @@ export const Htb = {
   `,
   SubTitle: styled.div`
     color: #000;
-    font-family: "Quicksand";
+     
     font-weight: 500;
 
     font-size: 14px;

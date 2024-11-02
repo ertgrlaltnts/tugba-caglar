@@ -39,7 +39,7 @@ export const Svb = {
     margin-left: 20px;
   `,
   Title: styled.div`
-    font-family: "Quicksand";
+     
     font-weight: 500;
     font-size: 25px;
     text-align: center;
@@ -51,7 +51,7 @@ export const Svb = {
     }
   `,
   Text: styled.div`
-    font-family: "Quicksand";
+     
     font-weight: 400;
 
     font-size: 14px;
@@ -66,7 +66,7 @@ export const Svb = {
 };
 
 export const ButtonText = styled.div`
-  font-family: "Quicksand";
+   
   font-weight: 500;
   font-size: 18px;
   color: #000;

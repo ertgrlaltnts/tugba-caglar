@@ -32,7 +32,7 @@ export const Dyn = {
 
   ServicesText: styled.div`
     color: "#000";
-    font-family: "Quicksand";
+     
     font-size: 40px;
     margin: 40px 0;
   `,
@@ -42,7 +42,7 @@ export const Dyn = {
     padding: 30px 0;
   `,
   BlockTitle: styled.div`
-    font-family: "Quicksand";
+     
     font-size: 30px;
     margin-top: 30px;
     font-weight: 600;
@@ -54,7 +54,7 @@ export const Dyn = {
   `,
 
   BlockText: styled.div`
-    font-family: "Quicksand";
+     
     font-size: 16px;
     font-weight: 500;
     color: #000;

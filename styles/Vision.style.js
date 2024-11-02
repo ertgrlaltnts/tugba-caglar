@@ -23,7 +23,7 @@ export const Vsn = {
 
   TextTitle: styled.div`
     font-size: 35px;
-    font-family: "Quicksand";
+     
     font-weight: 800;
     color: #bf8c41;
     text-align: left;
@@ -40,7 +40,7 @@ export const Vsn = {
 
   TextSubTitle: styled.div`
     font-size: 20px;
-    font-family: "Quicksand";
+     
     font-weight: 600;
     text-align: left;
     color: #fff;
@@ -58,7 +58,7 @@ export const Vsn = {
 
   Text: styled.div`
     font-size: 14px;
-    font-family: "Quicksand";
+     
     color: #fff;
     text-align: left;
     margin-top: 10px;
@@ -92,7 +92,7 @@ export const Vsn = {
     }
 
     @media ${device.mobileL} {
-      padding: 50px 30px 0 30px;
+      padding: 0px 30px 0 30px;
     }
   `,
 
@@ -159,7 +159,7 @@ export const Vsn = {
     margin: 40px 150px;
   `,
   BlockTitle: styled.div`
-    font-family: "Quicksand";
+     
     font-size: 35px;
     color: #000;
     text-align: center;
@@ -180,7 +180,7 @@ export const Vsn = {
   `,
   BlockText: styled.div`
     width: 50%;
-    font-family: "Quicksand";
+     
     font-size: 20px;
   `,
 
@@ -196,7 +196,7 @@ export const Vsn = {
     }
   `,
   InfoTitle: styled.div`
-    font-family: "Quicksand";
+     
     font-size: 20px;
     font-weight: 600;
     color: #fff;
@@ -210,7 +210,7 @@ export const Vsn = {
     }
   `,
   InfoText: styled.div`
-    font-family: "Quicksand";
+     
     font-size: 14px;
     font-weight: 400;
     color: #fff;
@@ -255,7 +255,7 @@ export const Vsn = {
     margin-right: 5px;
   `,
   ContactText: styled.div`
-    font-family: "Quicksand";
+     
     font-size: 14px;
     font-weight: 400;
     color: #fff;

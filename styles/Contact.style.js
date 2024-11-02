@@ -24,7 +24,7 @@ export const Cnt = {
 
   TextTitle: styled.h1`
     font-size: 35px;
-    font-family: "Quicksand";
+     
     font-weight: 800;
     color: #fff;
     text-align: center;
@@ -35,7 +35,7 @@ export const Cnt = {
   `,
   Text: styled.div`
     font-size: 16px;
-    font-family: "Quicksand";
+     
     font-weight: 500;
     color: #fff;
 
@@ -50,7 +50,7 @@ export const Cnt = {
     }
   `,
   More: styled.button`
-    font-family: "Quicksand";
+     
     outline: none;
     border: none;
     font-weight: 600;
@@ -107,7 +107,7 @@ export const Cnt = {
 
   ServicesText: styled.div`
     color: "#000";
-    font-family: "Quicksand";
+     
     font-size: 30px;
     margin: 40px 0;
   `,
@@ -137,7 +137,7 @@ export const Cnt = {
   `,
   LeftTitle: styled.div`
     color: #000;
-    font-family: "Quicksand";
+     
     font-weight: 600;
     font-size: 25px;
   `,
@@ -147,13 +147,13 @@ export const Cnt = {
   `,
   InputTitle: styled.div`
     color: #000;
-    font-family: "Quicksand";
+     
     font-weight: 600;
     font-size: 16px;
     margin-bottom: 5px;
   `,
   Input: styled.input`
-    font-family: "Quicksand";
+     
     font-weight: 500;
     border: none;
     outline: none;
@@ -164,7 +164,7 @@ export const Cnt = {
   `,
 
   InputArea: styled.textarea`
-    font-family: "Quicksand";
+     
     font-weight: 500;
     border: none;
     outline: none;
@@ -200,7 +200,7 @@ export const Cnt = {
   `,
   ElementText: styled.div`
     color: #fff;
-    font-family: "Quicksand";
+     
     font-size: 16px;
 
     @media ${device.mobileL} {

@@ -18,7 +18,7 @@ export const Adm = {
   `,
 
   UserBlockText: styled.div`
-    font-family: Quicksand;
+     
     font-weight: 500;
     font-size: 14px;
     color: #000;
@@ -73,7 +73,7 @@ export const Adm = {
 };
 
 export const BarElementText = styled.div`
-  font-family: Quicksand;
+   
   font-weight: 500;
   margin-top: -4px;
   transition: all 0.3s ease-in-out;

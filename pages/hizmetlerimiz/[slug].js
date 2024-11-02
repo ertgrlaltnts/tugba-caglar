@@ -13,6 +13,12 @@ import Footer from "@/components/Footer/Footer";
 import WrapBlock from "@/components/WrapBlock/WrapBlock";
 import { Envelope, Phone } from "phosphor-react";
 import axios from "axios";
+import { Quicksand } from "@next/font/google";
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"], // İhtiyacınıza göre ağırlıkları ekleyin
+});
 
 export default function Catalog({ drawer, setDrawer, general, data }) {
   const [small, setSmall] = useState(false);
@@ -60,7 +66,7 @@ export default function Catalog({ drawer, setDrawer, general, data }) {
 
         <link rel="icon" href="/logo.png" />
       </Head>
-      <main>
+      <main className={quicksand.className}>
         <PageTransition>
           <HeaderDrawer
             modalVisible={drawer}
@@ -94,7 +100,7 @@ export default function Catalog({ drawer, setDrawer, general, data }) {
                       height={300}
                       priority
                     />
-                    <Markdown>{data.content}</Markdown>
+                    <Markdown className={quicksand.className}>{data.content}</Markdown>
                   </Hmp.BlockItem>
                 </Col>
                 <Col xs={24} sm={24} md={24} lg={6} xl={6}>
@@ -121,10 +127,10 @@ export default function Catalog({ drawer, setDrawer, general, data }) {
                     <Hmp.Button href={"/contact"}>Hızlı İletişim</Hmp.Button>
                   </Hmp.BlockItem2>
 
-                  <Hmp.BlockItem3>
+                  <Hmp.BlockItem3 className={quicksand.className}>
                     <Hmp.Title2>Etiketler</Hmp.Title2>
                     {data.words.map((item, index) => (
-                      <Hmp.Keys key={index}>{item}</Hmp.Keys>
+                      <Hmp.Keys  key={index}>{item}</Hmp.Keys>
                     ))}
                   </Hmp.BlockItem3>
                 </Col>

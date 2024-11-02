@@ -41,7 +41,7 @@ export const Src = {
 
   ServicesText: styled.div`
     color: "#000";
-    font-family: "Quicksand";
+     
     font-size: 40px;
     margin: 40px 0;
   `,
@@ -51,7 +51,7 @@ export const Src = {
     padding: 30px 0;
   `,
   BlockTitle: styled.div`
-    font-family: "Quicksand";
+     
     font-size: 30px;
     font-weight: 600;
     color: #fff;
@@ -63,7 +63,7 @@ export const Src = {
   `,
 
   BlockText: styled.div`
-    font-family: "Quicksand";
+     
     font-size: 16px;
     font-weight: 500;
     color: #fff;
